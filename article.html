@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="pageTitle">Article — Stitch & Bloom</title>
+<meta name="description" id="pageMeta" content="Machine embroidery tips and tutorials from Stitch & Bloom.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-title">Stitch & Bloom</span>
+      <span class="logo-sub">Mother's Day Embroidery</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="articles.html">Tips & Guides</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-wishlist">❤️ Wishlist <span class="wishlist-count">0</span></button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop Designs</a>
+    <a href="ideas.html">Ideas & Inspiration</a>
+    <a href="articles.html">Tips & Guides</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="drawer-overlay"></div>
+<aside class="wishlist-drawer">
+  <div class="drawer-header"><h3>My Wishlist ❤️</h3><button class="drawer-close">✕</button></div>
+  <div class="drawer-body"></div>
+  <div class="drawer-footer"><a href="shop.html" class="btn btn-primary" style="justify-content:center">Browse All Designs →</a></div>
+</aside>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="articles.html">Tips & Guides</a>
+      <span class="breadcrumb-sep">›</span>
+      <span id="breadTitle">Article</span>
+    </div>
+    <span class="article-tag" id="articleTag">Tips</span>
+    <h1 id="articleTitle" style="margin-top:12px;">Loading…</h1>
+    <div class="article-meta" style="margin-top:16px;font-size:.85rem;color:var(--text-mid);display:flex;gap:16px;flex-wrap:wrap;">
+      <span>✏️ By Emma Stitch</span>
+      <span id="articleDate">📅 March 2025</span>
+      <span id="articleRead">⏱ 8 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE LAYOUT -->
+<div class="container">
+  <div class="article-layout">
+    <!-- BODY -->
+    <article class="article-body" id="articleBody">
+      <!-- Filled by JS -->
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="sidebar-widget">
+        <h4>🛍 Related Products</h4>
+        <div id="sidebarProducts"></div>
+        <a href="shop.html" class="btn btn-terra" style="display:block;text-align:center;margin-top:16px;font-size:.82rem;">
+          Shop All Designs ⬇
+        </a>
+      </div>
+      <div class="sidebar-widget">
+        <h4>📌 Share This</h4>
+        <a href="#" onclick="sharePinterest()" class="pinterest-share" style="display:inline-flex;width:100%;justify-content:center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Save to Pinterest
+        </a>
+      </div>
+      <div class="sidebar-widget">
+        <h4>📚 More Articles</h4>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="article.html?id=1" style="font-size:.83rem;color:var(--gold-dark);font-weight:500;line-height:1.4;">10 Tips for Embroidery on Towels →</a>
+          <a href="article.html?id=2" style="font-size:.83rem;color:var(--gold-dark);font-weight:500;line-height:1.4;">Choose the Right Stabilizer →</a>
+          <a href="article.html?id=3" style="font-size:.83rem;color:var(--gold-dark);font-weight:500;line-height:1.4;">Best Threads: Top 5 Picks →</a>
+          <a href="article.html?id=5" style="font-size:.83rem;color:var(--gold-dark);font-weight:500;line-height:1.4;">Beginner's Guide →</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- RELATED PRODUCTS SECTION -->
+<section style="padding: 0 0 80px; background: var(--cream-mid);">
+  <div class="container" style="padding-top:56px;">
+    <div class="section-header">
+      <span class="section-eyebrow">Related Designs</span>
+      <h2>Shop Designs for This Project</h2>
+    </div>
+    <div class="products-grid" id="relatedGrid"></div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="shop.html" class="btn btn-primary">Browse All 1,600+ Designs →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-title">Stitch & Bloom</span><span class="logo-sub">Mother's Day Embroidery</span></div>
+        <p>Curated machine embroidery designs for beautiful handmade gifts.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html?cat=floral">Floral</a>
+        <a href="shop.html?cat=quotes">Quotes</a>
+        <a href="shop.html?cat=funny">Funny</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="ideas.html">Ideas</a>
+        <a href="articles.html">Articles</a>
+        <a href="equipment.html">Equipment</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Stitch & Bloom.</span></div>
+  </div>
+</footer>
+
+<div class="toast"></div>
+
+<script src="products.js"></script>
+<script src="shared.js"></script>
+<script>
+const ARTICLES = {
+  1: {
+    title: '10 Tips for Perfect Machine Embroidery on Towels',
+    tag: 'Tips', date: 'March 2025', read: '6 min read',
+    cat: 'floral',
+    hero: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&h=400&fit=crop" alt="Embroidered towels">
+<p>Kitchen and bathroom towels are one of the most popular substrates for machine embroidery — and for good reason. They're practical, affordable, and make heartfelt personalised gifts. But terry cloth is notoriously tricky to embroider on. Here are my top 10 tips for flawless results.</p>
+<h2>1. Choose the Right Stabilizer</h2>
+<p>For most towels, a tear-away stabilizer works well, but the real key is using a <strong>topping</strong> — a piece of water-soluble stabilizer placed on top of the terry loops. This prevents your design from sinking into the pile and becoming illegible.</p>
+<div class="article-tip"><strong>💡 Pro Tip</strong>Sulky Solvy or Badgemaster Aqua are excellent water-soluble topper brands. Use a single layer on top and a tear-away underneath.</div>
+<h2>2. Use a Sharp Needle</h2>
+<p>A size 75/11 or 80/12 sharp embroidery needle is ideal for towels. Avoid ballpoint needles — they can push the loops aside rather than piercing cleanly, causing skipped stitches and needle breakage.</p>
+<h2>3. Pre-wash and Press</h2>
+<p>Always pre-wash your towels to remove any sizing or finish that could cause the fabric to shrink or the stabilizer to not adhere properly. Iron the embroidery area flat before hooping.</p>
+<h2>4. Hoop the Stabilizer, Not the Towel</h2>
+<p>Towels are thick and can be distorted by hooping. Instead, hoop your stabilizer tightly, then <strong>float</strong> the towel on top — pin it in place or use temporary adhesive spray. This prevents hoop marks and distortion.</p>
+<h2>5. Reduce Your Stitch Speed</h2>
+<p>Run your machine at 60-70% of its maximum speed when embroidering on towels. This reduces thread tension and gives the needle time to pierce cleanly through the thick fabric.</p>
+<h2>6. Add More Underlay</h2>
+<p>Increase your design's underlay stitches or use a zigzag underlay to help flatten the pile before the main stitching. Many embroidery software packages let you edit this.</p>
+<h2>7. Increase Stitch Density Slightly</h2>
+<p>Terry cloth can swallow light stitching. Increase your design's density by 10-15% to ensure full coverage without the fabric showing through.</p>
+<h2>8. Use Polyester Thread</h2>
+<p>Polyester thread is more durable than rayon, resists fading through repeated washing, and holds up beautifully to the heat of tumble drying — all important for kitchen towels.</p>
+<h2>9. Remove the Topping Carefully</h2>
+<p>After stitching, score the water-soluble topping with a pin or score tool at the edge of the stitching, then tear it away. Dampen any remaining pieces with a damp cloth and they'll dissolve. Don't pull hard or you risk distorting your design.</p>
+<h2>10. Choose the Right Design</h2>
+<p>Bold, simple designs with generous stitch coverage work best on towels. Designs with very fine lines or tiny details can get lost in the pile. Florals, monograms, and bold text designs are ideal.</p>
+<p>With these tips, you'll be creating beautiful embroidered towels that your recipients will treasure for years. Happy stitching!</p>
+<a href="https://pinterest.com" class="pinterest-share" onclick="sharePinterest();return false;">
+  📌 Save This Guide to Pinterest
+</a>`
+  },
+  2: {
+    title: 'How to Choose the Right Stabilizer for Any Fabric',
+    tag: 'Guide', date: 'February 2025', read: '8 min read',
+    cat: 'modern',
+    hero: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=900&h=400&fit=crop" alt="Stabilizer types">
+<p>Choosing the wrong stabilizer is one of the most common embroidery mistakes — and it can result in puckering, distortion, or a ruined design. Understanding the four main types of stabilizers and when to use them is a game-changer for your embroidery quality.</p>
+<h2>The Four Main Types</h2>
+<h3>1. Cut-Away Stabilizer</h3>
+<p>Cut-away stabilizer is the most supportive option. After embroidering, you cut away the excess, leaving a permanent layer of stabilizer bonded to the back of the design. Use it on:</p>
+<ul>
+<li>Stretchy knits and jerseys</li>
+<li>Polo shirts and t-shirts</li>
+<li>Any fabric that might distort under tension</li>
+</ul>
+<div class="article-tip"><strong>💡 Best Brands</strong>Sulky Cut-Away Plus and Pellon 70 are reliable, affordable options for most knit applications.</div>
+<h3>2. Tear-Away Stabilizer</h3>
+<p>Tear-away is a temporary stabilizer that you tear off after embroidering, leaving a clean back. It's ideal for:</p>
+<ul>
+<li>Woven fabrics like cotton, linen, and canvas</li>
+<li>Kitchen towels (with a topper)</li>
+<li>Sturdy fabrics that won't stretch or distort</li>
+</ul>
+<h3>3. Water-Soluble Stabilizer</h3>
+<p>This dissolves completely in water — both the topper variety (used on the surface) and the full backing type. Use it for:</p>
+<ul>
+<li>Freestanding lace designs</li>
+<li>As a topper on towels, fleece, and velvet</li>
+<li>Delicate fabrics where any remaining stabilizer would be visible</li>
+</ul>
+<h3>4. Heat-Away Stabilizer</h3>
+<p>This dissolves when you apply heat from an iron. It's less common but useful for fabrics you can't get wet, like some embellished or structured garments.</p>
+<h2>Quick Reference Guide</h2>
+<ul>
+<li>T-shirts & knits → Cut-away</li>
+<li>Cotton & woven → Tear-away</li>
+<li>Towels & fleece → Tear-away + water-soluble topper</li>
+<li>Freestanding lace → Water-soluble</li>
+<li>Velvet → Water-soluble topper</li>
+</ul>
+<p>Investing in the right stabilizer for each project is one of the highest-return upgrades you can make to your embroidery quality. Happy stitching!</p>`
+  },
+  3: {
+    title: 'Best Threads for Machine Embroidery: My Top 5 Picks',
+    tag: 'Review', date: 'January 2025', read: '5 min read',
+    cat: 'floral',
+    hero: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=900&h=400&fit=crop" alt="Thread collection">
+<p>Not all embroidery thread is created equal. After years of stitching on everything from cotton towels to denim and stretchy knits, I've developed strong opinions about thread. Here are my five absolute favourites.</p>
+<h2>1. Madeira Classic 40 — Rayon</h2>
+<p>For sheer, stunning sheen, nothing beats Madeira Classic rayon. The colour range is extraordinary — over 500 shades — and the thread runs beautifully on every machine I've tried. It's my go-to for decorative florals and anything where vibrancy matters.</p>
+<div class="article-tip"><strong>💡 Best For</strong>Floral designs, gifts, decorative projects where visual impact matters most. Not ideal for items that need frequent washing.</div>
+<h2>2. Isacord 40 — Polyester</h2>
+<p>If I could only keep one thread, it would be Isacord. It's incredibly strong, colourfast, machine-washable, and has beautiful sheen for a polyester. The 40-weight is versatile enough for almost any design.</p>
+<h2>3. Sulky Rayon 40 — Classic Sheen</h2>
+<p>Another rayon favourite with a gorgeous glossy finish. Sulky's colour palette leans towards rich, saturated tones that are perfect for portrait-style embroidery and anything requiring depth.</p>
+<h2>4. Mettler Poly Sheen — Workwear & Towels</h2>
+<p>For practical items like aprons, towels, and workwear that will see heavy use and frequent washing, Mettler Poly Sheen is outstanding. It's tear-resistant, fade-resistant, and runs smoothly at high speeds.</p>
+<h2>5. Robison-Anton Super Brite — Budget Pick</h2>
+<p>If budget is a concern, Robison-Anton Super Brite delivers impressive quality at a reasonable price point. The colours are bright and consistent, and it performs well on most fabrics.</p>
+<h2>My Thread Tips</h2>
+<ul>
+<li>Match thread weight to needle size: 40wt thread → size 75/11 needle</li>
+<li>Store thread away from UV light to prevent fading</li>
+<li>Use thread nets on slippery spools to prevent uneven feeding</li>
+<li>Test a new thread on a scrap before embroidering the final item</li>
+</ul>`
+  },
+  4: {
+    title: 'How to Make a Personalized Tote Bag in 30 Minutes',
+    tag: 'Tutorial', date: 'December 2024', read: '7 min read',
+    cat: 'quotes',
+    hero: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=900&h=400&fit=crop" alt="Personalised tote bag">
+<p>A personalised embroidered tote bag is one of the most appreciated handmade gifts — practical, beautiful, and unmistakably thoughtful. The best part? With a pre-made blank tote and a digital design, you can go from start to finished gift in about 30 minutes.</p>
+<h2>What You'll Need</h2>
+<ul>
+<li>A plain canvas or cotton tote bag (natural canvas works best)</li>
+<li>Your embroidery machine</li>
+<li>Tear-away stabilizer</li>
+<li>Your chosen design (see below for recommendations)</li>
+<li>Thread in your chosen colours</li>
+<li>Temporary adhesive spray (optional but helpful)</li>
+</ul>
+<h2>Step 1: Choose Your Design (5 min)</h2>
+<p>For totes, I recommend bold designs with clean lines — a quote, a monogram, or a simple floral motif. The design should fit comfortably on the front panel, typically 4–6 inches wide. Browse our <a href="shop.html?cat=quotes" style="color:var(--gold-dark);font-weight:600;">quote designs</a> or <a href="shop.html?cat=floral" style="color:var(--gold-dark);font-weight:600;">floral designs</a> for inspiration.</p>
+<h2>Step 2: Hoop Your Stabilizer (5 min)</h2>
+<p>Cut a piece of tear-away stabilizer slightly larger than your hoop. Float it into the hoop — don't hoop the tote fabric directly, as the thick seams can distort the design. Spray temporary adhesive onto the stabilizer and smooth your tote bag front onto it.</p>
+<div class="article-tip"><strong>💡 Placement Tip</strong>Mark the centre of your design area with water-soluble marker pen before hooping. Use your machine's basting function to stitch a placement box and adjust before starting.</div>
+<h2>Step 3: Embroider (15 min)</h2>
+<p>Load your design and embroider at normal speed — canvas is stable and easy to embroider on. Watch the first few stitches to make sure the tension is correct and the design is centred.</p>
+<h2>Step 4: Remove Stabilizer & Finish (5 min)</h2>
+<p>Carefully tear away the stabilizer close to the stitching. If there are any small pieces remaining in tight areas, use tweezers to remove them. Trim any jump threads, and give the embroidery a quick press with a pressing cloth to set the stitches.</p>
+<p>That's it! Wrap in tissue paper, pop in a gift bag, and you have a beautiful personalised tote that looks like it took hours but only took 30 minutes.</p>`
+  },
+  5: {
+    title: "Beginner's Complete Guide to Machine Embroidery",
+    tag: 'Beginner', date: 'November 2024', read: '12 min read',
+    cat: 'modern',
+    hero: 'https://images.unsplash.com/photo-1543269664-647163ee70d6?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1543269664-647163ee70d6?w=900&h=400&fit=crop" alt="Beginner embroidery machine">
+<p>Just purchased your first embroidery machine? Congratulations — you're about to discover one of the most rewarding hobbies in the craft world. This guide will walk you through everything you need to know to get started confidently.</p>
+<h2>Understanding Your Machine</h2>
+<p>Most home embroidery machines work the same fundamental way: they read a digital file (the embroidery design), move the fabric on a hoop in precise X/Y movements, and stitch out the design automatically. Your job is to set up the machine correctly and let it do the work.</p>
+<h3>Key Components</h3>
+<ul>
+<li><strong>The hoop</strong> — holds your fabric taut and moves it under the needle</li>
+<li><strong>The embroidery arm</strong> — connects the hoop to the machine's movement system</li>
+<li><strong>The presser foot</strong> — use the embroidery foot (usually comes with the machine)</li>
+<li><strong>The bobbin</strong> — the lower thread; use pre-wound bobbins for convenience</li>
+</ul>
+<h2>Your First Supply Kit</h2>
+<ul>
+<li>Embroidery thread (start with a basic set of 20 colours)</li>
+<li>Tear-away stabilizer (for woven fabrics)</li>
+<li>Cut-away stabilizer (for knits)</li>
+<li>Water-soluble topper (for towels and fleece)</li>
+<li>Embroidery needles (size 75/11 for most fabrics)</li>
+<li>Small scissors</li>
+<li>Temporary adhesive spray</li>
+</ul>
+<div class="article-tip"><strong>💡 Start Simple</strong>For your first project, use a simple design on a stable woven fabric like a cotton canvas tote bag or a piece of quilting cotton. Avoid stretchy knits and towels until you have a few projects under your belt.</div>
+<h2>Understanding Design Files</h2>
+<p>Embroidery designs come in various formats depending on your machine brand: PES (Brother), DST (universal), JEF (Janome), HUS (Husqvarna), and more. When you download from Creative Fabrica, most designs include multiple formats in a single zip file.</p>
+<h2>The Hooping Process</h2>
+<ol>
+<li>Cut stabilizer slightly larger than your hoop</li>
+<li>Separate the outer and inner hoop rings</li>
+<li>Place stabilizer and fabric over the outer ring</li>
+<li>Press the inner ring into the outer ring</li>
+<li>Pull fabric edges gently to ensure it's drum-taut but not stretched</li>
+<li>Tighten the screw on the outer ring</li>
+</ol>
+<h2>Your First Stitch-Out</h2>
+<p>Load your design file onto your machine (via USB or direct transfer). Centre the needle over your design placement mark. Run the machine at 70% speed for your first project. Watch the first few stitches to catch any tension issues early.</p>
+<p>Embroidery has a learning curve, but once it clicks, it's incredibly satisfying. Be patient with yourself, practice on scraps before embroidering your real item, and don't be afraid to start over if something goes wrong.</p>
+<p>Browse our <a href="shop.html" style="color:var(--gold-dark);font-weight:600;">full collection of designs</a> to find the perfect first project. Good luck!</p>`
+  },
+  6: {
+    title: '5 Creative Ways to Display Machine Embroidery',
+    tag: 'Ideas', date: 'October 2024', read: '4 min read',
+    cat: 'modern',
+    hero: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=500&fit=crop',
+    body: `
+<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=400&fit=crop" alt="Hoop art display">
+<p>Machine embroidery doesn't have to stay functional — it can be stunningly decorative too. Here are five beautiful ways to display your finished embroidery as art or gifts.</p>
+<h2>1. Wooden Hoop Art</h2>
+<p>The simplest and most charming option. Embroider your design on a piece of linen or cotton, leave it in the hoop, trim the fabric edges, and hang it on the wall. Add a ribbon tied through the screw for a polished finish.</p>
+<h2>2. Framed Embroidery</h2>
+<p>Transfer your finished embroidery to a piece of foam board or stiff card (adhesive spray works well), then frame it in a standard picture frame. This works beautifully for gifting — it looks professional and personal.</p>
+<h2>3. Embroidered Cards</h2>
+<p>Embroider a small design on card stock using water-soluble topper and a card backer stabilizer. The result is a dimensional, textured greetings card that doubles as a keepsake. Pairs perfectly with our <a href="shop.html?cat=quotes" style="color:var(--gold-dark);font-weight:600;">quote designs</a>.</p>
+<h2>4. Embroidery Patches</h2>
+<p>Use a patch backing to create iron-on embroidered patches. These can be applied to denim, bags, or clothing, and make wonderful small gifts. They also let you sell finished embroidery without committing to a large project.</p>
+<h2>5. Embroidered Bookmarks</h2>
+<p>Cut felt or linen into a bookmark shape, embroider a small design or initial, and seal the edges with a blanket stitch. Thread a ribbon through the top. These are quick, budget-friendly, and absolutely charming — perfect for gift sets and craft fairs.</p>`
+  }
+};
+
+function sharePinterest() {
+  const url = encodeURIComponent(window.location.href);
+  const desc = encodeURIComponent(document.title);
+  window.open(`https://pinterest.com/pin/create/button/?url=${url}&description=${desc}`, '_blank', 'width=750,height=550');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(location.search);
+  const id = parseInt(params.get('id')) || 1;
+  const art = ARTICLES[id] || ARTICLES[1];
+
+  document.getElementById('pageTitle').textContent = art.title + ' — Stitch & Bloom';
+  document.getElementById('pageMeta').setAttribute('content', art.title);
+  document.getElementById('articleTitle').textContent = art.title;
+  document.getElementById('articleTag').textContent = art.tag;
+  document.getElementById('articleDate').textContent = '📅 ' + art.date;
+  document.getElementById('articleRead').textContent = '⏱ ' + art.read;
+  document.getElementById('breadTitle').textContent = art.title.substring(0, 40) + '…';
+  document.getElementById('articleBody').innerHTML = art.body;
+
+  // Related products
+  if (typeof PRODUCTS !== 'undefined') {
+    const related = PRODUCTS.filter(p => p.c === art.cat).slice(0, 4);
+    const grid = document.getElementById('relatedGrid');
+    if (grid) grid.innerHTML = related.map(cardHTML).join('');
+
+    // Sidebar
+    const sidebar = document.getElementById('sidebarProducts');
+    if (sidebar) {
+      const sp = PRODUCTS.filter(p => p.c === art.cat).slice(0, 3);
+      sidebar.innerHTML = sp.map(p => `
+        <div class="sidebar-product">
+          <img src="${p.i}" alt="${escHtml(p.t)}" loading="lazy" onerror="this.src='https://placehold.co/56x56/f2d9d9/c9848a?text=✿'">
+          <div class="sidebar-product-info">
+            <div class="title">${escHtml(p.t)}</div>
+            <a class="cta" href="${p.a}" target="_blank" rel="noopener sponsored">⬇ Download →</a>
+          </div>
+        </div>`).join('');
+    }
+  }
+});
+</script>
+</body>
+</html>
