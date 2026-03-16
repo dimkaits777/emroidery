@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gift Guide: 10 Mother's Day Embroidery Ideas | Stitch Your Love</title>
+<meta name="description" content="10 quick and easy Mother's Day embroidery gift ideas — kitchen towels, eco totes, denim jackets and more. Instant download designs included.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SEARCH MODAL -->
+<div class="modal-overlay" id="search-modal">
+  <div class="modal-box" style="position:relative">
+    <button class="m-close" onclick="closeSearch()">✕</button>
+    <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--plum);margin-bottom:1rem">Search designs…</p>
+    <input class="modal-search" id="search-input" type="text" placeholder="e.g. Sunflower Mom, Nana…" autocomplete="off">
+    <div id="search-results" class="modal-results"></div>
+  </div>
+</div>
+
+<!-- WISHLIST DRAWER -->
+<div class="drawer-overlay" id="drawer-ov"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>My Wishlist 🤍</h3>
+    <button class="drawer-close" onclick="toggleDrawer()">✕</button>
+  </div>
+  <div class="drawer-items" id="drawer-items">
+    <div class="d-empty" id="drawer-empty">
+      <div style="font-size:2.5rem;margin-bottom:.75rem">🧵</div>
+      <p>Your wishlist is empty.</p>
+    </div>
+  </div>
+  <div class="drawer-foot" id="drawer-foot" style="display:none">
+    <a href="https://www.creativefabrica.com/search/ref/20531415/?query=mother&type=Embroidery" target="_blank" rel="noopener" class="btn btn-red" style="display:block;text-align:center">Shop on Creative Fabrica ➜</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">Stitch Your Love</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop All 1682</a></li>
+    <li><a href="shop.html?cat=floral">Floral</a></li>
+    <li><a href="shop.html?cat=grandma">Grandmas</a></li>
+    <li><a href="gift-guide.html" class="active">Gift Guide</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-btn" onclick="openSearch()">🔍</button>
+    <button class="nav-btn" onclick="toggleDrawer()">
+      🤍<span class="badge" id="wl-badge">0</span>
+    </button>
+    <button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+  <a href="shop.html" onclick="toggleMobile()">🛍 Shop All 1682</a>
+  <a href="shop.html?cat=floral" onclick="toggleMobile()">🌸 Floral</a>
+  <a href="shop.html?cat=grandma" onclick="toggleMobile()">💛 Grandmas</a>
+  <a href="gift-guide.html" onclick="toggleMobile()">🎁 Gift Guide</a>
+</div>
+
+<!-- HERO -->
+<div style="padding-top:68px;position:relative;overflow:hidden;z-index:2;min-height:300px;display:flex;align-items:center">
+  <div style="position:absolute;inset:0;background:linear-gradient(150deg,#0d1f0e 0%,#1a2d1a 40%,#2d1b2e 100%)"></div>
+  <!-- Scattered flower motifs -->
+  <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1">
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g opacity=".12">
+        <g transform="translate(80,60)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ff8fa3" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ff8fa3" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ff8fa3" transform="rotate(300)"/><circle cx="0" cy="0" r="9" fill="#d95f3b"/></g>
+        <g transform="translate(300,40)"><ellipse cx="0" cy="-14" rx="7" ry="14" fill="#7ab648" transform="rotate(0)"/><ellipse cx="0" cy="-14" rx="7" ry="14" fill="#5a9230" transform="rotate(72)"/><ellipse cx="0" cy="-14" rx="7" ry="14" fill="#7ab648" transform="rotate(144)"/><ellipse cx="0" cy="-14" rx="7" ry="14" fill="#5a9230" transform="rotate(216)"/><ellipse cx="0" cy="-14" rx="7" ry="14" fill="#7ab648" transform="rotate(288)"/><circle cx="0" cy="0" r="8" fill="#d4a853"/></g>
+        <g transform="translate(600,80)"><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ffb3c6" transform="rotate(0)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ff8fa3" transform="rotate(45)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ffb3c6" transform="rotate(90)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ff8fa3" transform="rotate(135)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ffb3c6" transform="rotate(180)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ff8fa3" transform="rotate(225)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ffb3c6" transform="rotate(270)"/><ellipse cx="0" cy="-20" rx="10" ry="20" fill="#ff8fa3" transform="rotate(315)"/><circle cx="0" cy="0" r="11" fill="#d95f3b"/></g>
+        <g transform="translate(900,55)"><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#9b59b6" transform="rotate(0)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#8e44ad" transform="rotate(60)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#9b59b6" transform="rotate(120)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#8e44ad" transform="rotate(180)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#9b59b6" transform="rotate(240)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#8e44ad" transform="rotate(300)"/><circle cx="0" cy="0" r="7" fill="#d4a853"/></g>
+        <g transform="translate(1100,70)"><ellipse cx="0" cy="-16" rx="8" ry="16" fill="#ffb3c6" transform="rotate(0)"/><ellipse cx="0" cy="-16" rx="8" ry="16" fill="#ff8fa3" transform="rotate(72)"/><ellipse cx="0" cy="-16" rx="8" ry="16" fill="#ffb3c6" transform="rotate(144)"/><ellipse cx="0" cy="-16" rx="8" ry="16" fill="#ff8fa3" transform="rotate(216)"/><ellipse cx="0" cy="-16" rx="8" ry="16" fill="#ffb3c6" transform="rotate(288)"/><circle cx="0" cy="0" r="9" fill="#d95f3b"/></g>
+        <!-- Bottom row -->
+        <g transform="translate(180,220)"><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#7ab648" transform="rotate(0)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#5a9230" transform="rotate(60)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#7ab648" transform="rotate(120)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#5a9230" transform="rotate(180)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#7ab648" transform="rotate(240)"/><ellipse cx="0" cy="-12" rx="6" ry="12" fill="#5a9230" transform="rotate(300)"/><circle cx="0" cy="0" r="7" fill="#d95f3b"/></g>
+        <g transform="translate(750,230)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#d95f3b" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#d95f3b" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ffb3c6" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#d95f3b" transform="rotate(300)"/><circle cx="0" cy="0" r="9" fill="#7ab648"/></g>
+      </g>
+    </svg>
+  </div>
+  <div style="position:relative;z-index:2;padding:4rem 2rem;max-width:800px;margin:0 auto;text-align:center">
+    <span style="display:inline-block;padding:.35rem 1.1rem;background:rgba(217,95,59,.25);border:1px solid rgba(217,95,59,.4);border-radius:50px;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:#ff8855;font-weight:600;margin-bottom:1.25rem">Gift Guide 2026</span>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3.2rem);color:#fff;line-height:1.2;margin-bottom:1rem">10 Quick & Easy Mother's Day Gifts<br><em style="color:#ffb3c6;font-style:italic">You Can Embroider Today</em></h1>
+    <p style="color:rgba(255,255,255,.72);line-height:1.78;font-size:.97rem;max-width:600px;margin:0 auto">From kitchen towels to denim jackets — find the best items to personalize with a beautiful machine embroidery design.</p>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<article class="article" style="position:relative;z-index:2">
+
+  <p style="font-size:1.03rem;color:var(--plum);font-style:italic;margin-bottom:2rem">The best gifts aren't the most expensive. They're the ones where someone took time, thought, and thread. This Mother's Day, skip the gift cards and make something she'll keep forever.</p>
+
+  <div class="tip-box">
+    <p>🧵 <strong>Pro tip:</strong> All designs below come with instant download and include PES, DST, EXP, HUS, JEF, VIP, VP3, and XXX formats. Compatible with Brother, Janome, Bernina, Singer, Husqvarna, and most other machines. <a href="https://www.creativefabrica.com/search/ref/20531415/?query=mother&type=Embroidery" target="_blank" rel="noopener" style="color:var(--persimmon);font-weight:700">Browse all 1682 designs here →</a></p>
+  </div>
+
+  <h2>The 10 Gift Ideas</h2>
+
+  <!-- 1 -->
+  <div class="gift-item rev" id="towels">
+    <div class="gift-num">1</div>
+    <div>
+      <h3 style="margin-top:0">Kitchen Towels — The Undisputed Classic</h3>
+      <p>A set of three personalized linen kitchen towels is the gift that gets used every single day. Stitch "Mama Needs Coffee," a sunflower design, or her grandma name on flour sack towels. They're affordable, practical, and every time she reaches for one she'll think of you.</p>
+      <ul>
+        <li>✅ Best fabric: 100% cotton or linen flour sack towels</li>
+        <li>✅ Best hoop size: 5×7 or 4×4</li>
+        <li>✅ Use tear-away stabilizer and light cotton thread</li>
+      </ul>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/mama-needs-coffee-754/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/06/07/Mama-Needs-Coffee-Embroidery-99184152-1.jpg" alt="Mama Needs Coffee"></a>
+        <a href="https://www.creativefabrica.com/product/sunflower-love-4/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2021/05/10/Sunflower-Love-Embroidery-11877574-1.jpg" alt="Sunflower Love"></a>
+        <a href="https://www.creativefabrica.com/product/mama-floral-mothers-day/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/06/06/Mama-Floral-Mothers-Day-Embroidery-99148302-1.jpg" alt="Mama Floral"></a>
+        <a href="https://www.creativefabrica.com/product/overstimulated-moms-club-27/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/05/23/Overstimulated-Moms-Club-Embroidery-98224389-1.jpg" alt="Overstimulated Moms Club"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="gift-item rev" id="totes">
+    <div class="gift-num">2</div>
+    <div>
+      <h3 style="margin-top:0">Eco Tote Bags — Thoughtful & Sustainable</h3>
+      <p>Canvas tote bags have become a daily staple — grocery runs, farmers markets, beach days. Embroider a meaningful design on natural or sage-colored canvas. She'll carry it everywhere and think of you every time.</p>
+      <ul>
+        <li>✅ Best fabric: 12 oz natural cotton canvas</li>
+        <li>✅ Best design: Large-format florals or bold lettering (5×7 or 6×10 hoop)</li>
+        <li>✅ Use a cutaway stabilizer for durability</li>
+      </ul>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/every-kind-of-mom/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/04/04/Every-Kind-of-Mom-Embroidery-94874736-1.png" alt="Every Kind of Mom"></a>
+        <a href="https://www.creativefabrica.com/product/she-is-strong-fierce-brave-2/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/04/27/She-is-Strong-Fierce-Brave-Embroidery-68199827-1.jpg" alt="She is Strong Fierce Brave"></a>
+        <a href="https://www.creativefabrica.com/product/mother-is-the-first-love/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/05/07/Mother-is-the-First-Love-Embroidery-121487231-1.png" alt="Mother is the First Love"></a>
+        <a href="https://www.creativefabrica.com/product/best-mom-ever-1300/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/04/04/Best-Mom-Ever-Embroidery-66164798-1-1.jpg" alt="Best Mom Ever"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="gift-item rev" id="apparel">
+    <div class="gift-num">3</div>
+    <div>
+      <h3 style="margin-top:0">Denim Jackets — The Ultimate Statement Piece</h3>
+      <p>A personalized denim jacket is a showstopper. Stitch a large floral design on the back, or a smaller design on the chest pocket. It becomes a signature piece of her wardrobe for years.</p>
+      <ul>
+        <li>✅ Best position: Back yoke for large designs, left chest for small</li>
+        <li>✅ Stabilizer: Tear-away + extra-sticky topping for fabric texture</li>
+        <li>✅ Thread: 40-weight embroidery thread works beautifully on denim</li>
+      </ul>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/mothers-day-floral-embroidery-designs/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/03/30/Mothers-Day-Floral-Embroidery-Designs-Embroidery-119037309-1.jpg" alt="Floral Set"></a>
+        <a href="https://www.creativefabrica.com/product/floral-mama-7/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/04/14/Floral-Mama-Embroidery-67164090-1.png" alt="Floral Mama"></a>
+        <a href="https://www.creativefabrica.com/product/pink-purple-daisy-embroidery-set/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/09/14/Pink-Purple-Daisy-Embroidery-Set-Embroidery-130729541-1.jpg" alt="Daisy Set"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="gift-item rev">
+    <div class="gift-num">4</div>
+    <div>
+      <h3 style="margin-top:0">Throw Pillows — Cozy Home Décor</h3>
+      <p>A personalized throw pillow instantly elevates any living room or bedroom. Use a linen or cotton pillow cover, embroider a quote or floral design, and stuff with a pillow insert. Gift in a beautiful box for a boutique-quality present. Pair with a "Best Mom Ever" or floral design for maximum impact.</p>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/mama-with-floral-frame/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/11/29/Mama-with-Floral-Frame-Embroidery-85290125-1.jpg" alt="Mama with Floral Frame"></a>
+        <a href="https://www.creativefabrica.com/product/mothers-love-20/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/04/04/Mothers-Love-Embroidery-94874607-1.png" alt="Mother's Love"></a>
+        <a href="https://www.creativefabrica.com/product/queen-of-hearts-a-mothers-day-tribute-9/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/05/14/Queen-of-Hearts-a-Mothers-Day-Tribute-Embroidery-97562281-1.png" alt="Queen of Hearts"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="gift-item rev">
+    <div class="gift-num">5</div>
+    <div>
+      <h3 style="margin-top:0">Aprons — For the Mom Who Loves to Cook</h3>
+      <p>Personalize a high-quality linen apron with a fun design. Add her name for an extra-special touch. Perfect for the mom who rules the kitchen.</p>
+      <ul>
+        <li>✅ "Mama Needs Coffee" — always a hit</li>
+        <li>✅ Her grandma name (Grammy, Nana, Mimi) + a small floral</li>
+        <li>✅ A funny quote like "Behind Every Mom…"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="gift-item rev">
+    <div class="gift-num">6</div>
+    <div>
+      <h3 style="margin-top:0">Baby Blankets & Onesies — For the New Mom</h3>
+      <p>For the brand-new mama, stitch a nursery design onto a white onesie or soft knit blanket. These become family heirlooms.</p>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/mother-and-child-silhouette-7/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/04/14/Mother-and-Child-Silhouette-Embroidery-119883228-1.png" alt="Mother Child Silhouette"></a>
+        <a href="https://www.creativefabrica.com/product/my-1st-mothers-day-52/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2022/04/19/My-1st-Mothers-Day-Embroidery-29267164-1.jpg" alt="My 1st Mother's Day"></a>
+        <a href="https://www.creativefabrica.com/product/mama-bear-and-cub-embroidery-design/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/10/10/Mama-Bear-and-Cub-Embroidery-Design-Embroidery-132780154-1.jpg" alt="Mama Bear and Cub"></a>
+        <a href="https://www.creativefabrica.com/product/baby-hand-in-mothers-hand/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/06/16/Baby-Hand-in-Mothers-Hand-Embroidery-124194226-1.jpg" alt="Baby Hand in Mother's Hand"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="gift-item rev">
+    <div class="gift-num">7</div>
+    <div>
+      <h3 style="margin-top:0">Keychains — Quick, Affordable, Meaningful</h3>
+      <p>In-the-hoop keychain designs are some of the fastest projects you can make — some take less than 20 minutes. Stitch "Mom" or her grandma name onto vinyl or felt, finish with a key ring, and you have a gift she'll carry every day.</p>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="gift-item rev">
+    <div class="gift-num">8</div>
+    <div>
+      <h3 style="margin-top:0">Sports Mom Sweatshirts</h3>
+      <p>For the baseball mama, football mom, or gymnastics cheerleader — a personalized sweatshirt is a thoughtful gift that matches her passion.</p>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/baseball-mama-embroidery-mothers-day-2/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/04/14/Baseball-Mama-Embroidery-Mothers-Day-Embroidery-119879372-1.jpg" alt="Baseball Mama"></a>
+        <a href="https://www.creativefabrica.com/product/gymnastics-mom-applique-embroidery/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2024/07/04/Gymnastics-MOM-Applique-Embroidery-Embroidery-101076943-1.jpg" alt="Gymnastics Mom"></a>
+        <a href="https://www.creativefabrica.com/product/tennis-mom-18/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2022/04/29/Tennis-Mom-Embroidery-29795310-1.jpg" alt="Tennis Mom"></a>
+        <a href="https://www.creativefabrica.com/product/mothers-day-gift-football-mom-ith/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/05/13/Mothers-Day-Gift-Football-Mom-ITH-Embroidery-69547994-1.png" alt="Football Mom"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="gift-item rev">
+    <div class="gift-num">9</div>
+    <div>
+      <h3 style="margin-top:0">Pet Mom Gifts — For the Fur Baby Mama</h3>
+      <p>Dog moms and cat moms deserve recognition too! Stitch a cute design onto a t-shirt, tote, or even a pet bandana.</p>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/cat-mom-85/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2023/05/11/Cat-Mom-Embroidery-69381344-1.jpg" alt="Cat Mom"></a>
+        <a href="https://www.creativefabrica.com/product/dog-mom-pet-lover/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2026/03/02/Dog-Mom-Pet-Lover-Embroidery-143707847-1.jpg" alt="Dog Mom"></a>
+        <a href="https://www.creativefabrica.com/product/best-cat-mom-ever-cat-lover-quote/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2026/03/02/Best-Cat-Mom-Ever-Cat-Lover-Quote-Embroidery-143706980-1.jpg" alt="Best Cat Mom Ever"></a>
+        <a href="https://www.creativefabrica.com/product/cute-cat-mom-paw-print/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2026/02/23/Cute-Cat-Mom-Paw-Print-Embroidery-143072049-1.jpg" alt="Cat Mom Paw Print"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="gift-item rev">
+    <div class="gift-num">10</div>
+    <div>
+      <h3 style="margin-top:0">Framed Embroidery — Heirloom Wall Art</h3>
+      <p>Don't just wear it — frame it. Stitch a beautiful floral or quote design onto linen, stretch it over a frame, and you've created wall art that could hang in her home for decades. Use a 6" or 8" embroidery hoop as the frame for a charming handmade look.</p>
+      <div class="gift-imgs">
+        <a href="https://www.creativefabrica.com/product/floral-happy-mothers-day/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2021/04/15/Floral-Happy-Mothers-Day-Embroidery-10873565-1.jpg" alt="Floral Happy Mother's Day"></a>
+        <a href="https://www.creativefabrica.com/product/mama-love-script/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/03/25/Mama-Love-Script-Embroidery-118742813-1.jpg" alt="Mama Love Script"></a>
+        <a href="https://www.creativefabrica.com/product/blooming-rose-embroidery-design/ref/20531415/" target="_blank"><img class="gift-img" src="https://www.creativefabrica.com/wp-content/uploads/2025/09/14/Blooming-Rose-Embroidery-Design-Embroidery-130730152-1.jpg" alt="Blooming Rose"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-box" style="margin-top:2.5rem">
+    <p>✨ <strong>Stock up on designs:</strong> Browse all 1682 Mother's Day embroidery designs — <a href="https://www.creativefabrica.com/search/ref/20531415/?query=mother&type=Embroidery" target="_blank" rel="noopener" style="color:var(--persimmon);font-weight:700">click here to shop the full collection →</a> Instant download, commercial licence included.</p>
+  </div>
+</article>
+
+<!-- FEATURED PRODUCTS FROM GUIDE -->
+<section class="section-pad" style="position:relative;z-index:2">
+  <div class="wrap">
+    <span class="sec-label rev">Shop the Guide</span>
+    <h2 class="sec-title rev">Designs Featured in This Guide</h2>
+    <div class="grid rev" id="featured-grid"></div>
+    <div style="text-align:center;margin-top:2rem" class="rev">
+      <a href="shop.html" class="btn btn-green">View All 1682 Designs ➜</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="position:relative;z-index:2;padding:0 0 4rem">
+  <div class="wrap">
+    <div class="cta-banner rev">
+      <h2>Ready to Start Stitching?</h2>
+      <p>1682 premium Mother's Day embroidery designs — instant download, all formats, commercial licence.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="shop.html" class="btn btn-green">Browse All Designs ➜</a>
+        <a href="https://www.creativefabrica.com/search/ref/20531415/?query=mother&type=Embroidery" target="_blank" rel="noopener" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.5)">Design Store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo">Stitch Your Love</span>
+      <p class="footer-tag">1682 premium machine embroidery designs for Mother's Day.</p>
+      <p style="font-size:.72rem;color:rgba(255,255,255,.3)">Affiliate disclosure: links lead to Creative Fabrica.</p>
+    </div>
+    <div>
+      <h4 class="footer-h">Shop</h4>
+      <ul class="footer-ul">
+        <li><a href="shop.html">All 1682 Designs</a></li>
+        <li><a href="shop.html?cat=floral">Floral</a></li>
+        <li><a href="shop.html?cat=grandma">Grandmas</a></li>
+        <li><a href="shop.html?cat=sports">Sports</a></li>
+        <li><a href="shop.html?cat=pets">Pets</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-h">Guide</h4>
+      <ul class="footer-ul">
+        <li><a href="gift-guide.html#towels">Kitchen Towels</a></li>
+        <li><a href="gift-guide.html#totes">Tote Bags</a></li>
+        <li><a href="gift-guide.html#apparel">Denim Jackets</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-h">Navigate</h4>
+      <ul class="footer-ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="https://www.creativefabrica.com/search/ref/20531415/?query=mother&type=Embroidery" target="_blank">Design Store</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Stitch Your Love</span>
+    <span>1682 designs · Affiliate links to Creative Fabrica</span>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="shared.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const grid = document.getElementById('featured-grid');
+  if(!grid || typeof PRODUCTS==='undefined') return;
+  // Pick a nice cross-section
+  const picks = [
+    ...PRODUCTS.filter(p=>p.c==='floral').slice(0,2),
+    ...PRODUCTS.filter(p=>p.c==='grandma').slice(0,2),
+    ...PRODUCTS.filter(p=>p.c==='sports').slice(0,2),
+    ...PRODUCTS.filter(p=>p.c==='pets').slice(0,2),
+    ...PRODUCTS.filter(p=>p.c==='newmom').slice(0,2),
+    ...PRODUCTS.filter(p=>p.c==='funny').slice(0,2),
+  ];
+  grid.innerHTML = picks.map(p=>cardHTML(p,'')).join('');
+  wlRefreshUI();
+});
+</script>
+</body>
+</html>
